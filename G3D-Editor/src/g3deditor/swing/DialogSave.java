@@ -47,7 +47,6 @@ import javax.swing.filechooser.FileFilter;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public final class DialogSave extends JDialog implements ActionListener, MouseListener
 {
 	private static final FileFilter FILE_FILTER = new FileFilter()
@@ -270,7 +269,6 @@ public final class DialogSave extends JDialog implements ActionListener, MouseLi
 				
 				new Thread()
 				{
-					@SuppressWarnings("synthetic-access")
 					@Override
 					public final void run()
 					{

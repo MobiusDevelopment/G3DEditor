@@ -22,7 +22,6 @@ import javax.swing.JCheckBox;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public class DefaultCheckBox extends JCheckBox
 {
 	public DefaultCheckBox()

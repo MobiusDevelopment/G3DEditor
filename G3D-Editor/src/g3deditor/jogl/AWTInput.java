@@ -23,6 +23,7 @@ import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.Robot;
 import java.awt.Toolkit;
+import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
@@ -227,11 +228,11 @@ public final class AWTInput implements MouseListener, MouseMotionListener, Mouse
 	@Override
 	public final void mouseClicked(final MouseEvent mouseevent)
 	{
-		if ((mouseevent.getModifiers() & MouseEvent.BUTTON1_MASK) != 0)
+		if ((mouseevent.getModifiersEx() & InputEvent.BUTTON1_DOWN_MASK) != 0)
 		{
 			_mouseEvents.addLast(mouseevent);
 		}
-		else if ((mouseevent.getModifiers() & MouseEvent.BUTTON2_MASK) != 0)
+		else if ((mouseevent.getModifiersEx() & InputEvent.BUTTON2_DOWN_MASK) != 0)
 		{
 			GLDisplay.getInstance().getSelectionBox().toggleInfHeight();
 		}
@@ -302,7 +303,7 @@ public final class AWTInput implements MouseListener, MouseMotionListener, Mouse
 	@Override
 	public final void mouseDragged(final MouseEvent e)
 	{
-		if ((e.getModifiers() & MouseEvent.BUTTON1_MASK) != 0)
+		if ((e.getModifiersEx() & InputEvent.BUTTON1_DOWN_MASK) != 0)
 			_mouseEvents.addLast(e);
 		
 		mouseMoved(e);

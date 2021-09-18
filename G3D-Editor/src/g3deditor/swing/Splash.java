@@ -17,7 +17,6 @@ import javax.swing.JWindow;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public final class Splash extends JWindow implements Runnable
 {
 	public static interface CheckedRunnable

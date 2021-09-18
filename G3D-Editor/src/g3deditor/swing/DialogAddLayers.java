@@ -45,7 +45,6 @@ import javax.swing.event.DocumentListener;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public final class DialogAddLayers extends JDialog implements ActionListener, DocumentListener
 {
 	private final JPanel _panelChecks;

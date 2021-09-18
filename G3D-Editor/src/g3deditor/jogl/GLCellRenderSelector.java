@@ -34,7 +34,7 @@ import javax.media.opengl.GL2;
  */
 public final class GLCellRenderSelector
 {
-	public static final FastComparator<GLSubRenderSelector> GEO_BLOCK_COMPARATOR = new FastComparator<GLSubRenderSelector>()
+	public static final FastComparator<GLSubRenderSelector> GEO_BLOCK_COMPARATOR = new FastComparator<>()
 	{
 		@Override
 		public final boolean compare(final GLSubRenderSelector o1, final GLSubRenderSelector o2)
@@ -48,7 +48,7 @@ public final class GLCellRenderSelector
 		}
 	};
 	
-	public static final FastComparator<GeoCell> GEO_CELL_COMPARATOR = new FastComparator<GeoCell>()
+	public static final FastComparator<GeoCell> GEO_CELL_COMPARATOR = new FastComparator<>()
 	{
 		@Override
 		public final boolean compare(final GeoCell o1, final GeoCell o2)

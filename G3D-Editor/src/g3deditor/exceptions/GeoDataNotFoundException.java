@@ -19,7 +19,6 @@ package g3deditor.exceptions;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public final class GeoDataNotFoundException extends RuntimeException
 {
 	public GeoDataNotFoundException(final int geoX, final int geoY)

@@ -28,7 +28,6 @@ import javax.swing.table.TableColumn;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public class DefaultTable extends JTable
 {
 	public DefaultTable(final DefaultTableModel model)

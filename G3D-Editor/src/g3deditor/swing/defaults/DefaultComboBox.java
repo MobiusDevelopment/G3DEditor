@@ -21,8 +21,7 @@ import javax.swing.JComboBox;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
-public class DefaultComboBox extends JComboBox
+public class DefaultComboBox extends JComboBox<Object>
 {
 	public DefaultComboBox()
 	{

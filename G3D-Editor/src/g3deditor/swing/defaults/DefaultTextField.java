@@ -21,7 +21,6 @@ import javax.swing.JTextField;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public class DefaultTextField extends JTextField
 {
 	public DefaultTextField()

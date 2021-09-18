@@ -19,7 +19,6 @@ package g3deditor.exceptions;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public final class GeoDataNotLoadedException extends RuntimeException
 {
 	public GeoDataNotLoadedException(final int geoX, final int geoY)

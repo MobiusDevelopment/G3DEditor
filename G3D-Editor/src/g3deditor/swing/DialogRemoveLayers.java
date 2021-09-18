@@ -45,10 +45,9 @@ import javax.swing.JPanel;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public final class DialogRemoveLayers extends JDialog implements ActionListener, ItemListener
 {
-	private static final FastComparator<Integer> HEIGHT_COMPARATOR = new FastComparator<Integer>()
+	private static final FastComparator<Integer> HEIGHT_COMPARATOR = new FastComparator<>()
 	{
 		@Override
 		public final boolean compare(final Integer o1, final Integer o2)

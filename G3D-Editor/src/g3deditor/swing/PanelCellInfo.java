@@ -30,7 +30,6 @@ import javax.swing.JPanel;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public final class PanelCellInfo extends JPanel
 {
 	private final DefaultLabel _labelRegionXY;

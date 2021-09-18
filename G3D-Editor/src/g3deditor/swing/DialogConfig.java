@@ -34,7 +34,6 @@ import javax.swing.JSlider;
 import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.filechooser.FileFilter;
 
-@SuppressWarnings("serial")
 public final class DialogConfig extends JDialog implements MouseListener, ActionListener
 {
 	private static final FileFilter DIR_FILTER = new FileFilter()
@@ -53,7 +52,7 @@ public final class DialogConfig extends JDialog implements MouseListener, Action
 	
 	private static final Integer[] getNsweTexIds()
 	{
-		final ArrayList<Integer> ids = new ArrayList<Integer>();
+		final ArrayList<Integer> ids = new ArrayList<>();
 		ids.add(1);
 		for (int i = 2;; i++)
 		{
@@ -66,7 +65,7 @@ public final class DialogConfig extends JDialog implements MouseListener, Action
 	
 	private final JPanel _panelMisc;
 	private final DefaultLabel _labelLookAndFeel;
-	private final JComboBox _comboLookAndFeel;
+	private final JComboBox<?> _comboLookAndFeel;
 	
 	private final JPanel _panelEditor;
 	private final JPanel _panelCheckButtons;
@@ -77,7 +76,7 @@ public final class DialogConfig extends JDialog implements MouseListener, Action
 	private final JCheckBox _checkDrawOutline;
 	
 	private final DefaultLabel _labelCellRenderer;
-	private final JComboBox _comboCellRenderer;
+	private final JComboBox<String> _comboCellRenderer;
 	
 	private final DefaultLabel _labelDLLoDRange;
 	private final JSlider _sliderDLLoDRange;
@@ -89,7 +88,7 @@ public final class DialogConfig extends JDialog implements MouseListener, Action
 	private final DefaultButton _buttonChooseColors;
 	
 	private final DefaultLabel _labelNSWETexture;
-	private final JComboBox _comboNSWETexture;
+	private final JComboBox<?> _comboNSWETexture;
 	
 	private final JPanel _panelGeodata;
 	private final DefaultLabel _labelGeodataPath;
@@ -114,7 +113,7 @@ public final class DialogConfig extends JDialog implements MouseListener, Action
 		_panelMisc = new JPanel();
 		_panelMisc.setBorder(BorderFactory.createTitledBorder("Misc"));
 		_labelLookAndFeel = new DefaultLabel("LookAndFeel:");
-		_comboLookAndFeel = new JComboBox(Config.getInstalledLookAndFeels());
+		_comboLookAndFeel = new JComboBox<Object>(Config.getInstalledLookAndFeels());
 		
 		_panelEditor = new JPanel();
 		_panelEditor.setBorder(BorderFactory.createTitledBorder("Editor"));
@@ -127,7 +126,7 @@ public final class DialogConfig extends JDialog implements MouseListener, Action
 		_checkDrawOutline = new JCheckBox("Draw Outline");
 		
 		_labelCellRenderer = new DefaultLabel("CellRenderer:");
-		_comboCellRenderer = new JComboBox();
+		_comboCellRenderer = new JComboBox<>();
 		//_comboCellRenderer.setSelectedItem(Config.CELL_RENDERER);
 		
 		_labelDLLoDRange = new DefaultLabel("DisplayList LoD - max detail range:");
@@ -137,7 +136,7 @@ public final class DialogConfig extends JDialog implements MouseListener, Action
 		_sliderDLLoDRange.setMinorTickSpacing(256);
 		_sliderDLLoDRange.setMajorTickSpacing(1024);
 		_sliderDLLoDRange.setPaintTicks(true);
-		Hashtable<Integer, DefaultLabel> rangeTable = new Hashtable<Integer, DefaultLabel>();
+		Hashtable<Integer, DefaultLabel> rangeTable = new Hashtable<>();
 		for (int i = DLLoDRenderer.MIN_DISTANCE_SQ; i <= DLLoDRenderer.MAX_DISTANCE_SQ; i += 2048)
 		{
 			rangeTable.put(i, new DefaultLabel(String.valueOf(i)));
@@ -152,7 +151,7 @@ public final class DialogConfig extends JDialog implements MouseListener, Action
 		_sliderGridRange.setMinorTickSpacing(2);
 		_sliderGridRange.setMajorTickSpacing(8);
 		_sliderGridRange.setPaintTicks(true);
-		rangeTable = new Hashtable<Integer, DefaultLabel>();
+		rangeTable = new Hashtable<>();
 		for (int i = 8; i <= 96; i += 8)
 		{
 			rangeTable.put(i, new DefaultLabel(String.valueOf(i)));
@@ -165,7 +164,7 @@ public final class DialogConfig extends JDialog implements MouseListener, Action
 		_buttonChooseColors.addActionListener(this);
 		
 		_labelNSWETexture = new DefaultLabel("NSWE Texture:");
-		_comboNSWETexture = new JComboBox(getNsweTexIds());
+		_comboNSWETexture = new JComboBox<Object>(getNsweTexIds());
 		
 		_panelGeodata = new JPanel();
 		_panelGeodata.setBorder(BorderFactory.createTitledBorder("Geodata"));

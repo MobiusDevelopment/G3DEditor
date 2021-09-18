@@ -22,7 +22,6 @@ import javax.swing.JLabel;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public class DefaultLabel extends JLabel
 {
 	public DefaultLabel()

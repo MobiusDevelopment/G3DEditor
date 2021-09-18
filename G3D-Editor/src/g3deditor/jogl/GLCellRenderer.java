@@ -51,7 +51,7 @@ public abstract class GLCellRenderer
 	
 	public static final String[] getAvailableRenderers(final GL2 gl)
 	{
-		final ArrayList<String> list = new ArrayList<String>(5);
+		final ArrayList<String> list = new ArrayList<>(5);
 		list.add(IRenderer.NAME);
 		if (DLRenderer.isAvailable(gl))
 			list.add(DLRenderer.NAME);

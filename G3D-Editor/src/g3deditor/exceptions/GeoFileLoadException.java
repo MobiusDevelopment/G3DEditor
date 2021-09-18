@@ -21,7 +21,6 @@ import java.io.File;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public final class GeoFileLoadException extends RuntimeException
 {
 	public GeoFileLoadException(final File file, final boolean l2j, final String couse)

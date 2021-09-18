@@ -22,7 +22,6 @@ import javax.swing.JToggleButton;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public class DefaultToggleButton extends JToggleButton
 {
 	public DefaultToggleButton()

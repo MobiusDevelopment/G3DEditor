@@ -82,7 +82,7 @@ public final class GLShader
 		_vertexShaderName = new File(vertexShaderPath).getName();
 		_fragmentShader = readShader(fragmentShaderPath, "FragmentShader");
 		_fragmentShaderName = new File(fragmentShaderPath).getName();
-		_uniforms = new HashMap<String, GLUniform>();
+		_uniforms = new HashMap<>();
 	}
 	
 	public final int getProgramId()

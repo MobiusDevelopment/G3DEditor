@@ -22,7 +22,6 @@ import javax.swing.JRadioButton;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public class DefaultRadioButton extends JRadioButton
 {
 	public DefaultRadioButton()

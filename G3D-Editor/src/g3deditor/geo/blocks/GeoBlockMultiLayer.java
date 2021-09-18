@@ -48,7 +48,7 @@ public final class GeoBlockMultiLayer extends GeoBlock
 		return new GeoBlockMultiLayer((GeoBlockMultiLayer) block);
 	}
 	
-	private static final FastComparator<GeoCell> HEIGHT_COMPARATOR = new FastComparator<GeoCell>()
+	private static final FastComparator<GeoCell> HEIGHT_COMPARATOR = new FastComparator<>()
 	{
 		@Override
 		public final boolean compare(final GeoCell o1, final GeoCell o2)

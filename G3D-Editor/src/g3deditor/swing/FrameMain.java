@@ -46,7 +46,6 @@ import javax.swing.filechooser.FileFilter;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public final class FrameMain extends JFrame implements ActionListener
 {
 	private static final FileFilter GEO_FILTER = new FileFilter()

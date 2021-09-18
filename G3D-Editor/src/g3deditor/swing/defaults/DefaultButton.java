@@ -22,7 +22,6 @@ import javax.swing.JButton;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public class DefaultButton extends JButton
 {
 	public DefaultButton()

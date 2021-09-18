@@ -43,7 +43,6 @@ import javax.swing.JPanel;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public final class PanelDirectNswe extends JPanel implements MouseListener
 {
 	private static final int IMAGE_WIDTH = 128;

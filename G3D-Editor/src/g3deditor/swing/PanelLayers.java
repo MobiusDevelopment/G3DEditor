@@ -35,7 +35,6 @@ import javax.swing.JScrollPane;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
 
-@SuppressWarnings("serial")
 public final class PanelLayers extends JPanel implements ActionListener
 {
 	private final CellLayerTable _tableLayers;

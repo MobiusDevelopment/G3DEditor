@@ -47,7 +47,6 @@ import javax.swing.JOptionPane;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public final class DialogJumpTo extends JDialog implements ActionListener, KeyListener, MouseListener
 {
 	private static final Font DEFAULT_FONT = new Font("Arial", Font.BOLD, 64);
@@ -72,7 +71,7 @@ public final class DialogJumpTo extends JDialog implements ActionListener, KeyLi
 	private final DefaultLabel _labelGeoL2OffFound;
 	private final DefaultTextField _fieldGeoL2OffFound;
 	private final DefaultLabel _labelGeoFileType;
-	private final JComboBox _comboGeoFileType;
+	private final JComboBox<String> _comboGeoFileType;
 	
 	private final DefaultButton _buttonOk;
 	private final DefaultButton _buttonCancel;
@@ -149,7 +148,7 @@ public final class DialogJumpTo extends JDialog implements ActionListener, KeyLi
 		_fieldGeoL2OffFound.setEnabled(false);
 		
 		_labelGeoFileType = new DefaultLabel("Select:");
-		_comboGeoFileType = new JComboBox();
+		_comboGeoFileType = new JComboBox<>();
 		_comboGeoFileType.setEditable(false);
 		_comboGeoFileType.setEnabled(false);
 		

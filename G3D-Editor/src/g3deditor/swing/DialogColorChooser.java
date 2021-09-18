@@ -46,7 +46,6 @@ import javax.swing.event.ChangeListener;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public final class DialogColorChooser extends JDialog implements ChangeListener, ActionListener, ItemListener
 {
 	private static final String[] TYPES =
@@ -59,9 +58,9 @@ public final class DialogColorChooser extends JDialog implements ChangeListener,
 	
 	private final JPanel _panelCombos;
 	private final JLabel _labelSelectionState;
-	private final JComboBox _comboSelectionState;
+	private final JComboBox<?> _comboSelectionState;
 	private final JLabel _labelBlockType;
-	private final JComboBox _comboBlockType;
+	private final JComboBox<?> _comboBlockType;
 	
 	private final DefaultLabel _labelRed;
 	private final JSlider _sliderRed;
@@ -101,7 +100,6 @@ public final class DialogColorChooser extends JDialog implements ChangeListener,
 		super(dialog, "Choose colors...", true);
 		addWindowListener(new WindowAdapter()
 		{
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public final void windowClosing(final WindowEvent e)
 			{
@@ -111,10 +109,10 @@ public final class DialogColorChooser extends JDialog implements ChangeListener,
 		
 		_panelCombos = new JPanel();
 		_labelSelectionState = new JLabel("State:");
-		_comboSelectionState = new JComboBox(SelectionState.values());
+		_comboSelectionState = new JComboBox<Object>(SelectionState.values());
 		_comboSelectionState.addItemListener(this);
 		_labelBlockType = new JLabel("Type:");
-		_comboBlockType = new JComboBox(new String[]{"Flat", "Complex", "MultiLayer", "MultiLayerSpecial"});
+		_comboBlockType = new JComboBox<Object>(new String[]{"Flat", "Complex", "MultiLayer", "MultiLayerSpecial"});
 		_comboBlockType.addItemListener(this);
 		
 		_labelRed = new DefaultLabel("Red:");

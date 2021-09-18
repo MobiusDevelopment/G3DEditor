@@ -37,7 +37,6 @@ import javax.swing.JPanel;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public final class PanelNswe extends JPanel implements ActionListener
 {
 	private final NsweButton[] _buttonsNswe;

@@ -246,7 +246,6 @@ public final class Config
 		PROPERTIES.save(CONFIG_FILE);
 	}
 	
-	@SuppressWarnings("serial")
 	private static final class ConfigProperties extends Properties
 	{
 		ConfigProperties()

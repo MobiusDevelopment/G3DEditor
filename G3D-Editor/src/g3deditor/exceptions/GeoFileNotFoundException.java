@@ -21,7 +21,6 @@ import java.io.File;
  * 
  * @author Forsaiken aka Patrick, e-mail: patrickbiesenbach@yahoo.de
  */
-@SuppressWarnings("serial")
 public final class GeoFileNotFoundException extends RuntimeException
 {
 	public GeoFileNotFoundException(final File file, final boolean l2j)
